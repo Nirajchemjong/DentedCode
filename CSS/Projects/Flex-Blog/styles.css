@@ -23,6 +23,7 @@ html {
   align-items: center;
   padding: 1rem;
   color: white;
+  font-size: 1.5rem;
 }
 .container {
   width: 80%;
@@ -37,6 +38,7 @@ html {
 }
 i {
   margin-left: 2rem;
+
 }
 
 a:active,
@@ -105,10 +107,10 @@ a:hover {
 
 /* latests Posts  */
 /* layouts */
-.latest__post{
+/* .latest__post{
         width: 90%;
         margin: 0 auto;
-}
+} */
 .post__container{
 
         display: flex;
@@ -167,7 +169,6 @@ aside {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
         height: 100%;
         margin-left: 0;
         flex-grow: 2;
@@ -177,7 +178,7 @@ aside > div {
         
         display: flex;
         flex-direction: column;
-        align-items: center;
+        padding: 2rem;
         font-size: 1.2rem;
         
         
@@ -191,5 +192,54 @@ aside > div {
 .year{
         background-color: yellow;
         align-self: stretch;
+} 
+
+/* recommendation starts */
+.section__recom{
+        height: 50vh;
+        padding: 2rem;
+        background-color: greenyellow;
 }
- 
+.recom__box{
+        
+        display: flex;
+        justify-content: space-between;
+        height: 37rem;
+       
+}
+.recom__box > div {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        height: 100%;
+        width: 30rem;
+        background-color: white;
+}
+.recom__box-img{
+        height: 55%;
+        background:url('./img/hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+}
+.recom__box-content{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+}
+.recom__box-content > h3 {
+        font-size: 1.9rem;
+}
+.recom__box-content > p {
+        font-size: 1.3rem;
+        margin-top: -0.8rem;
+}
+.recom__box--btn{
+        background-color: red;
+        border: none;
+        padding: 1.3rem;
+}
+.recom__box--btn:hover{
+        background-color: rgba(255, 0, 0, 0.382);
+        color: red;
+}
