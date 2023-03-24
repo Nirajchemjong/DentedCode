@@ -1,10 +1,9 @@
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
-body{
-        
+body {
   margin: 0;
   padding: 0;
 }
@@ -15,83 +14,75 @@ html {
 
 /* global message  */
 
-.glb-msg{
-        background-color:hsla(0, 93%, 47%,0.4);
+.glb-msg {
+  background-color: hsla(0, 93%, 47%, 0.4);
 }
-.glb-msg > div{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        color: white;
+.glb-msg > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
 }
-.container{
-        width: 80%;
-        margin: 0 auto;
-       
- }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 
-.icon{
-        
-        display: flex;
-        /* justify-content: space-between;
+.icon {
+  display: flex;
+  /* justify-content: space-between;
         align-items: center;
          */
-
-} 
-i{
-        margin-left: 2rem;
 }
-
-
+i {
+  margin-left: 2rem;
+}
 
 a:active,
 a:visited,
-a:link{
-        text-decoration: none;
-        color: whitesmoke;
+a:link {
+  text-decoration: none;
+  color: whitesmoke;
 }
-a:hover{
-        text-decoration: none;
-        color: hsla(298, 100%, 49%, 0.9);
+a:hover {
+  text-decoration: none;
+  color: hsla(298, 100%, 49%, 0.9);
 }
-
 
 /* navbar section */
 
-.header__nav{
-        background-color: blue;
+.header__nav {
+  background-color: blue;
 }
-.header__nav > div{
-       
-        display:flex;
-        justify-content: space-between;
-        color: white;
-        padding: 1rem;
-        font-size: 2rem;
+.header__nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
 }
-ul {
-        display: flex;
-       
+.ul__header{
+  display: flex;
 }
-ul > li{
-        text-decoration: none;
-        list-style: none;
-        margin-left: 2rem;
-        margin-right: 0;
+.ul__header > li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 2rem;
+  margin-right: 0;
 }
-
 
 /* hero section  */
-.hero{
-        height: 63rem;
-        background: url('./img/hero.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* position:relative; */
+.hero {
+  height: 63rem;
+  background: url("./img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position:relative; */
 }
 /* 
 .hero > div {
@@ -103,12 +94,102 @@ ul > li{
 
 } */
 
-.hero__content{
-     
-        padding: 8rem 5rem;
-        background-color: rgba(0, 0, 0, 0.24);
-        border-radius: 2rem;
-        color: rgba(224, 217, 7, 0.807);
-        text-align: center;
-        font-size: 2rem;
+.hero__content {
+  padding: 8rem 5rem;
+  background-color: rgba(0, 0, 0, 0.568);
+  border-radius: 2rem;
+  color: rgba(224, 217, 7, 0.807);
+  text-align: center;
+  font-size: 2rem;
 }
+
+/* latests Posts  */
+/* layouts */
+.latest__post{
+        width: 90%;
+        margin: 0 auto;
+}
+.post__container{
+
+        display: flex;
+        justify-content: space-around;
+
+
+}
+/* box-shadow: h-shadow v-shadow blur spread color; */
+.post {
+        padding: 2rem;
+  
+}
+
+.post__box {
+  display: flex;
+  box-shadow: -2px 0px 15px 0px rgba(0, 0, 0, 0.793);
+  padding: 0.9rem;
+
+  margin-bottom: 3rem;      
+ 
+}
+.post__box--content {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.post__box--content-heading {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+.post__box--content > div,
+.post__box--content > p {
+  font-size: 1.4rem;
+}
+.post__box--content-icondate {
+  margin-left: -2rem;
+  margin-top: -2.2rem;
+}
+.post__box--content-btn{
+        display: flex;
+        align-self: flex-end;
+        background-color: red;
+        border: none;
+        padding: 1.2rem;
+}
+.post__box--content-btn:hover{
+        background-color: rgba(207, 51, 51, 0.545);
+        color: red;
+}
+
+
+/* aside css */
+aside {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        margin-left: 0;
+        flex-grow: 2;
+}
+aside > div {
+        
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+        
+        
+        
+}
+.country{
+        background-color: yellowgreen;
+        margin-bottom: 4rem;
+        align-self: stretch;
+        }
+.year{
+        background-color: yellow;
+        align-self: stretch;
+}
+ 

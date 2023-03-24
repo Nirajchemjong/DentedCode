@@ -1,60 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <title>My Travel Blog</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        
-        <!-- global message -->
-   <div class="glb-msg">
-    <div class="container">
-        <H2>Welcome!</H2> 
-    <div class="icon">
-        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-    </div>
-   </div>
-        <!-- header section -->
+      <!-- global message -->
+      <div class="glb-msg">
+        <div class="container">
+          <h2>Welcome!</h2>
+          <div class="icon">
+            <a href="https://facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://linkedin.com"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- header section -->
 
-        <nav class="header__nav">
-            <div class="container">
-                <div class="logo"> <a href="#"> My Travel blog</a>   </div>
-            <ul>
+      <nav class="header__nav">
+        <div class="container">
+          <div class="logo"><a href="#"> My Travel blog</a></div>
+          <ul class="ul__header">
             <li class="items-1"><a href="#">Blog</a></li>
-                <li class="items-2"><a href="#">Gallery</a></li>
-                <li class="items-3"><a href="#">Contact us</a></li>
-            </ul>
-            </div>
-        </nav>
+            <li class="items-2"><a href="#">Gallery</a></li>
+            <li class="items-3"><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
 
-        <!-- hero section -->
+      <!-- hero section -->
 
-        <section class="hero">
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Welcome To my Blog</h1>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
+            esse.
+          </p>
+        </div>
+      </section>
+      <!-- latest post section  -->
 
-            <div class="hero__content">
-                <h1>Welcome To my Blog</h1>
-                <hr>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, esse.</p>
-            </div>
-            
-        </section>
-        <!-- latest post section  -->
-        
-        <!-- sidebar links section  -->
-        
-        <!-- recommendation section  -->
-        
-        <!-- subscribe section  -->
-        
-        <!-- footer section  -->
+      <section class="latest__post">
+        <h1>Latest Posts</h1>
+        <hr />
+        <div class="post__container">
+<!-- starting post  -->
+        <div class="post">
+    <!-- post one  -->
+    <div class="post__box">
+      <div class="post__box--img">
+        <img
+          src="./img/hero.jpg"
+          alt="hero img"
+          width="300px"
+          srcset=""
+        />
+      </div>
+      <div class="post__box--content">
+        <h2 class="post__box--content-heading">
+          Travel as student for free
+        </h2>
+        <div class="post__box--content-icondate">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>24/03/2023</span>
+        </div>
+
+        <p class="post__box--content-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          repellat accusantium unde deleniti cumque ratione minus!
+          Aspernatur distinctio odio officia.
+        </p>
+        <button type="submit" class="post__box--content-btn">
+          Read more &rarr;
+        </button>
+      </div>
     </div>
-</body>
+
+    <!-- post two  -->
+    <div class="post__box">
+      <div class="post__box--img">
+        <img
+          src="./img/hero.jpg"
+          alt="hero img"
+          width="300px"
+          srcset=""
+        />
+      </div>
+      <div class="post__box--content">
+        <h2 class="post__box--content-heading">
+          Travel as student for free
+        </h2>
+        <div class="post__box--content-icondate">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>24/03/2023</span>
+        </div>
+
+        <p class="post__box--content-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          repellat accusantium unde deleniti cumque ratione minus!
+          Aspernatur distinctio odio officia.
+        </p>
+        <button type="submit" class="post__box--content-btn">
+          Read more &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- post three  -->
+    <div class="post__box">
+      <div class="post__box--img">
+        <img
+          src="./img/hero.jpg"
+          alt="hero img"
+          width="300px"
+          srcset=""
+        />
+      </div>
+      <div class="post__box--content">
+        <h2 class="post__box--content-heading">
+          Travel as student for free
+        </h2>
+        <div class="post__box--content-icondate">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>24/03/2023</span>
+        </div>
+
+        <p class="post__box--content-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          repellat accusantium unde deleniti cumque ratione minus!
+          Aspernatur distinctio odio officia.
+        </p>
+        <button type="submit" class="post__box--content-btn">
+          Read more &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- post fourth  -->
+    <div class="post__box">
+      <div class="post__box--img">
+        <img
+          src="./img/hero.jpg"
+          alt="hero img"
+          width="300px"
+          srcset=""
+        />
+      </div>
+      <div class="post__box--content">
+        <h2 class="post__box--content-heading">
+          Travel as student for free
+        </h2>
+        <div class="post__box--content-icondate">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>24/03/2023</span>
+        </div>
+
+        <p class="post__box--content-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          repellat accusantium unde deleniti cumque ratione minus!
+          Aspernatur distinctio odio officia.
+        </p>
+        <button type="submit" class="post__box--content-btn">
+          Read more &rarr;
+        </button>
+      </div>
+    </div>
+        </div>
+
+  <!-- sarting sidebar links section  -->
+  <aside>
+      <div class="country">
+        <h3>Read By Country</h3>
+        <ul class="ul__aside">
+            <li>Australia</li>
+            <li>Nepal</li>
+            <li>India</li>
+            <li>China</li>
+            <li>Fiji</li>
+        </ul>
+     </div>
+
+      <div class="year">
+            <h3>Read By Year</h3>
+            <ul class="ul__aside">
+                <li>2022</li>
+                <li>2021</li>
+                <li>2020</li>
+            </ul>
+      </div>
+
+  </aside>
+        </div>
+        
+      </section>
+
+      <!-- recommendation section  -->
+
+      <!-- subscribe section  -->
+
+      <!-- footer section  -->
+    </div>
+  </body>
 </html>
