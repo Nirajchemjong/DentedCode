@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}    
+html{
+    box-sizing: inherit;
+    font-size: 62.5%;
+}
+  
+
+.parent{
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: blue;
+    height: 60vh;
+    align-items: center;
+    
+}
+
+.parent div{
+   background-color: greenyellow;
+   margin:1rem;
+   height: 7rem;
+   width: 8rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* [class^="item-"]{
+    background-color: red;
+} */
+.parent div:nth-child(odd){
+    background-color: rebeccapurple;
+}
+.item-1{
+    order:1;
+}
