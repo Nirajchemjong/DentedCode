@@ -21,7 +21,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.7rem;
   color: white;
   font-size: 1.5rem;
 }
@@ -196,7 +196,7 @@ aside > div {
 
 /* recommendation starts */
 .section__recom{
-        height: 50vh;
+        height: 55vh;
         padding: 2rem;
         background-color: greenyellow;
 }
@@ -204,28 +204,38 @@ aside > div {
         
         display: flex;
         justify-content: space-between;
-        height: 37rem;
-       
+        height: 35rem;
+        
 }
+
 .recom__box > div {
         display: flex;
         flex-direction: column;
-        align-self: stretch;
+        background-color: white;
         height: 100%;
         width: 30rem;
-        background-color: white;
+      
+}
+[class^="recom__box-"]:not(:last-child){
+        margin-right: 2rem;
 }
 .recom__box-img{
         height: 55%;
+        width: 100%;
         background:url('./img/hero.jpg');
-        background-repeat: no-repeat;
         background-size: cover;
+        background-repeat: no-repeat;
+       
+        overflow: hidden;
+        padding: 1rem;
        
 }
 .recom__box-content{
         display: flex;
         flex-direction: column;
         padding: 1rem;
+        text-align: left;
+       
 }
 .recom__box-content > h3 {
         font-size: 1.9rem;
