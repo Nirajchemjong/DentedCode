@@ -1,9 +1,12 @@
 *,
 *::before,
 *::after {
+    box-sizing: inherit;
+}
+body{
+        
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 html {
   font-size: 62.5%;
@@ -18,6 +21,7 @@ html {
 .glb-msg > div{
         display:flex;
         justify-content: space-between;
+        align-items: center;
         padding: 1rem;
         color: white;
 }
@@ -25,14 +29,18 @@ html {
         width: 80%;
         margin: 0 auto;
        
-}
+ }
+
 .icon{
-        width: 5rem;
+        
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between;
         align-items: center;
+         */
 
-
+} 
+i{
+        margin-left: 2rem;
 }
 
 
@@ -58,18 +66,51 @@ a:hover{
        
         display:flex;
         justify-content: space-between;
-        align-items: center;
         color: white;
-        padding: 2rem;
-        font-size: 1.5rem;
+        padding: 1rem;
+        font-size: 2rem;
 }
 ul {
-        width: 30%;
         display: flex;
        
 }
 ul > li{
         text-decoration: none;
         list-style: none;
-        margin-left: 1rem;
+        margin-left: 2rem;
+        margin-right: 0;
+}
+
+
+/* hero section  */
+.hero{
+        height: 63rem;
+        background: url('./img/hero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* position:relative; */
+}
+/* 
+.hero > div {
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+} */
+
+.hero__content{
+     
+        padding: 8rem 5rem;
+        background-color: rgba(0, 0, 0, 0.24);
+        border-radius: 2rem;
+        color: rgba(224, 217, 7, 0.807);
+        text-align: center;
+        font-size: 2rem;
+
+
 }
