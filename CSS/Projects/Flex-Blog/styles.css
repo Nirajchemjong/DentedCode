@@ -243,3 +243,37 @@ aside > div {
         background-color: rgba(255, 0, 0, 0.382);
         color: red;
 }
+
+/* Styling Subscribe  */
+.sub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8rem;
+}
+.sub > h1{
+        font-size: 2rem;
+
+}
+.sub__input-style{
+        padding: .5rem;
+}
+.sub__input-btn{
+        padding: .5rem;
+        width: 19rem;
+        background-color: red;
+        border: 2px solid red;
+}
+
+/* styling footer  */
+
+.section__footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6rem;
+        background-color: black;
+        color: white;
+        font-size: 1.3rem;
+}
