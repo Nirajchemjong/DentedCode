@@ -56,6 +56,7 @@ a:hover {
 
 .header__nav {
   background-color: blue;
+  position: relative;
 }
 .header__nav > div {
   display: flex;
@@ -73,6 +74,10 @@ a:hover {
   list-style: none;
   margin-left: 2rem;
   margin-right: 0;
+}
+
+.navigation{
+        display: none;
 }
 
 /* hero section  */
@@ -313,8 +318,144 @@ small screen: < 768px  */
 
 /* pads  */
 
-@media screen and  (max-width:1000px) {
+
+@media screen and  (max-width:1100px) {
         .glb-msg{
                 background-color: blueviolet;
         }
-}
+      
+      /* navigation starts  */
+
+      .ul__header{
+        display: none;
+      }
+      
+    
+     .navigation {
+       display:flex;
+       margin-bottom: 2rem;
+
+       }
+  
+       .navigation__checkbox{
+        display: none;
+       }
+       .navigation__button{
+        height: 8rem;
+        width: 8rem;
+        background-color: #240dd796;
+        border-radius: 50%;
+        box-shadow: 0 2rem 3rem rgb(15, 4, 96) ;
+       }
+       .navigation__icon, .navigation__icon::before, .navigation__icon::after{
+        display: flex;
+        height: .3rem;
+        width: 5rem;
+        background-color: #fff;
+        transition: all .2s;
+       }
+
+       .navigation__icon{
+        position:relative;
+        left: 1.5rem;
+        top: 3.8rem;
+        
+       }
+       .navigation__icon::before{
+        content: "";
+        position: absolute;
+        top: -1.2rem;
+        left: 0;
+
+       }
+       .navigation__icon::after{
+        content: "";
+        position: absolute;
+        top: 1.2rem;
+        left: 0;
+       }
+     
+       /* when navigation checkbox is hover it's sibling child position changes  */
+
+       .navigation__checkbox:hover ~ .navigation__button .navigation__icon::before{
+        display: flex;
+        position: absolute;
+        top: -1.6rem;
+        left: 0;
+       }
+       .navigation__checkbox:hover ~ .navigation__button .navigation__icon::after{
+        position: absolute;
+        top: 1.6rem;
+        left: 0;
+       }
+
+
+       /* when navigation is check icon before and after pseudo is rotated  */
+
+       .navigation__checkbox:checked ~ .navigation__button .navigation__icon {
+       background-color: transparent;
+       }
+
+       .navigation__checkbox:checked ~ .navigation__button .navigation__icon::before{
+        position: absolute;
+        top: 0;
+        left: 0; 
+        rotate: 225deg;
+       }
+       .navigation__checkbox:checked ~ .navigation__button .navigation__icon::after{
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        rotate: -225deg;
+       }
+
+       .navigation__background{
+        display: block;
+        height: 6rem;
+        width: 6rem;
+        background-color: royalblue;
+        border-radius: 50%;
+        
+        position: relative;
+        top: 1rem;
+        left: 7rem;
+        transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+        opacity: 0;
+       }
+
+       .navigation__checkbox:checked ~ .navigation__background{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(90);
+       }
+
+       .navigation__nav{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        
+       }
+       .navigation__checkbox:checked ~ .navigation__nav {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+       }
+
+       .navigation__list > .navigation__item {
+        list-style: none;
+        font-size: 10rem;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 4rem;
+       }
+
+       /* hamburger menu styles ends here  */
+       
+
+       
+
+ }
