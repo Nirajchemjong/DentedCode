@@ -455,7 +455,127 @@ small screen: < 768px  */
 
        /* hamburger menu styles ends here  */
        
+ }
+
+ 
+ @media(max-width:1025px) {
+        
+        /* starting latest post for ipad views  */
 
        
+.post__container{
+
+        display: flex;
+        flex-direction: column;
+
+}
+/* box-shadow: h-shadow v-shadow blur spread color; */
+.post {
+        width: 100%;
+  
+}
+
+aside{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 2rem;
+ 
+}
+.country,.year{
+        width: 50%;
+        margin-bottom: 0;
+}
+
+ }
+
+ /* styling for mobile view  */
+
+ @media(max-width:722px){
+        
+
+.post__box {
+        display: flex;
+        flex-direction: column;
+        box-shadow: -2px 0px 15px 0px rgba(0, 0, 0, 0.793);
+        padding: 0.9rem;
+        margin-bottom: 3rem;      
+       
+      }
+
+      .post__box--img > img{
+        width: 100%;
+      }
+      .post__box--content {
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .post__box--content-heading {
+        margin-top: 0;
+        font-size: 1.8rem;
+      }
+      .post__box--content > div,
+      .post__box--content > p {
+        font-size: 1.4rem;
+      }
+      .post__box--content-icondate {
+        margin-left: -2rem;
+        margin-top: -1.2rem;
+      }
+      .post__box--content-btn{
+              display: flex;
+              align-self: flex-end;
+              background-color: red;
+              border: none;
+              padding: 1.2rem;
+      }
+      .post__box--content-btn:hover{
+              background-color: rgba(207, 51, 51, 0.545);
+              color: red;
+}
+
+aside{
+        display: flex;
+        flex-direction: column;
+
+}
+.country,.year{
+width: 100%;
+
+}
+
+/* latest posts ended  */
+
+
+/* Styling Subscribe  */
+.sub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8rem;
+}
+.sub .sub__input{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+}
+.sub > h1{
+        font-size: 2rem;
+
+}
+.sub__input-style{
+        padding: .5rem;
+}
+.sub__input-btn{
+        padding: .5rem;
+        width: 19rem;
+        background-color: red;
+        border: 2px solid red;
+}
+
 
  }
