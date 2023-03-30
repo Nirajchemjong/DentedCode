@@ -304,3 +304,17 @@ aside > div {
         color: white;
         font-size: 1.3rem;
 }
+
+/* media query  */
+/* 
+larger screen: 1200px
+medium : 768px to 1200px
+small screen: < 768px  */
+
+/* pads  */
+
+@media screen and  (max-width:1000px) {
+        .glb-msg{
+                background-color: blueviolet;
+        }
+}
