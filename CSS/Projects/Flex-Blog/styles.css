@@ -120,6 +120,7 @@ a:hover {
 }
 /* box-shadow: h-shadow v-shadow blur spread color; */
 .post {
+        width: 70%;
         padding: 2rem;
   
 }
@@ -128,7 +129,6 @@ a:hover {
   display: flex;
   box-shadow: -2px 0px 15px 0px rgba(0, 0, 0, 0.793);
   padding: 0.9rem;
-
   margin-bottom: 3rem;      
  
 }
@@ -165,13 +165,11 @@ a:hover {
 
 /* aside css */
 aside {
+        width: 30%;
         padding-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
         height: 100%;
-        margin-left: 0;
-        flex-grow: 2;
+ 
+ 
 }
 aside > div {
         
@@ -196,44 +194,60 @@ aside > div {
 
 /* recommendation starts */
 .section__recom{
-        height: 55vh;
-        padding: 2rem;
+        /* height: 55vh; */
+        /* padding: 2rem; */
         background-color: greenyellow;
 }
 .recom__box{
         
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        height: 35rem;
+        
+        /* height: 35rem; */
         
 }
 
 .recom__box > div {
-        display: flex;
-        flex-direction: column;
+      
+        /* display: flex;
+        flex-direction: column; */
         background-color: white;
-        height: 100%;
-        width: 30rem;
+        width: 29rem;
+        margin-bottom: 2rem;
+        flex-grow: 1;
+        
+     
       
 }
-[class^="recom__box-"]:not(:last-child){
-        margin-right: 2rem;
+[class^="recom__box---"]{
+       
+        border-radius: 1rem 1rem 1rem 1rem;
+        box-shadow: -.5px 5px 10px 5px rgba(0,0,0, 0.3772);
+        overflow: hidden;
+      
 }
+
+[class^="recom__box---"]:not(:last-child){
+        margin-right: 1rem;
+} 
 .recom__box-img{
-        height: 55%;
-        width: 100%;
-        background:url('./img/hero.jpg');
+        /* height: 55%; */
         background-size: cover;
         background-repeat: no-repeat;
-       
-        overflow: hidden;
-        padding: 1rem;
+        /* padding: 1rem; */
        
 }
+.recom__box-img img{
+        width: 100%;
+}
 .recom__box-content{
-        display: flex;
+        /* display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center; */
         padding: 1rem;
+        padding-bottom: 1rem;
         text-align: left;
        
 }
@@ -242,12 +256,15 @@ aside > div {
 }
 .recom__box-content > p {
         font-size: 1.3rem;
-        margin-top: -0.8rem;
+        /* margin-top: -0.8rem; */
 }
 .recom__box--btn{
+        min-width: 100%;
         background-color: red;
         border: none;
-        padding: 1.3rem;
+        padding: 1rem 0;
+        box-shadow: -5px 2px 5px 5px rgba(165, 158, 158, 0.493);
+        border-radius: 5px;
 }
 .recom__box--btn:hover{
         background-color: rgba(255, 0, 0, 0.382);
