@@ -579,3 +579,16 @@ width: 100%;
 
 
  }
+
+ @media(max-width: 655px){
+        .hero{
+                height: 65vh;
+        }
+
+        .hero__content{
+                height: 100%;
+                width: 100%;
+                border-radius: 0;
+        }
+
+ }
