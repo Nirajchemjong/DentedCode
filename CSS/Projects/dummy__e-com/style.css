@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: 
+
+    /* gm is global message
+    hd is header 
+    sf is special first
+    ss is special second
+    sim is  side menu */
+
+    "gm  gm gm "
+    "hd  hd hd"
+    "hero hero sf"
+    "hero  hero ss"
+    "sim main main"
+    "tags main main"
+    "recent main main"
+    "footer footer footer";
+    gap: 1rem;
+}
+
+.global__msg{
+    grid-area: gm;
+    background:linear-gradient(to right bottom, red 60% 40%, brown 50%)
+}
+.header{
+    grid-area: hd;
+    background-color: aquamarine;
+}
+.hero{
+    grid-area:hero;
+    background-color: blue;
+}
+.special__first{
+    grid-area: sf;
+    background-color: bisque;
+}
+.special__second{
+    grid-area:ss;
+    background-color: blueviolet;
+}
+
+.side__menu{
+    grid-area: sim;
+    background-color: aqua;
+}
+.tags{
+    grid-area: tags;
+    background-color: burlywood;
+}
+.recent{
+    grid-area: recent;
+    background-color: chartreuse;
+}
+.main{
+    min-height: 400px;
+    grid-area: main;
+    background-color: wheat;
+
+}
+.footer{
+grid-area: footer;
+background-color: aqua;
+
+}
+
+
+.wrapper > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* sir new way of media query  */
+
+/* pads  */
+
+@media (768px <= width < 1250px){
+    
+}
+
+/*mobile */
+@media (0 <= width < 768px){
+
+}
+
+
+
+/* starting  media query for ipod  */
+
+
+
+@media (max-width:1020px){
+
+.wrapper{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: 
+
+    /* gm is global message
+    hd is header 
+    sf is special first
+    sim is special second */
+
+    "gm  gm "
+    "hd  hd "
+    "hero hero"
+    "sf    ss"
+    "sim sim"
+    "main main"
+    "recent tags"
+    "footer footer";
+}
+
+}
+
+@media(max-width:550px){
+
+    .wrapper{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: 
+
+    /* gm is global message
+    hd is header 
+    sf is special first
+    sim is special second */
+
+    "gm"
+    "hd"
+    "hero"
+    "main"
+    "sf"
+    "ss"
+    "sim"
+    "tags"
+    "recent"
+    "footer";
+}
+}
