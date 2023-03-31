@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+}
+.wrapper{
+    height: 65vh;
+    background-color: aquamarine;
+    font-size: 2rem;
+    padding: 10px;
+    /* grid starting  */
+/* 1fr fr is fractional percentages  */
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+ */
+grid-template-areas: 
+"itm1 itm1 itm1 itm1"
+"itm2 itm2 itm3 itm3"
+"itm4 itm4 itm4 itm4"
+"itm5 itm5 itm6 itm6"
+"itm7 itm7 itm7 itm7"
+"itm8 itm8 itm9 itm9";
+gap: 10px;
+
+}
+.wrapper > div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}  
+
+[class^="item-"]{
+
+    background-color: rebeccapurple;
+
+
+ }
+
+ .item-1 {
+    grid-area: itm1;
+ }
+ .item-2{
+grid-area: itm2;
+ }
+ .item-3{
+    grid-area: itm3;
+    
+ }
+
+ .item-4{
+
+    grid-area: itm4;
+ }
+
+ .item-5{
+ 
+    grid-area: itm5;
+ }
+
+ .item-6{
+
+    grid-area: itm6;
+
+ }
+
+ .item-7{
+
+    grid-area: itm7;
+ }
+
+ .item-8{
+
+    grid-area: itm8;
+ }
+
+ .item-9{
+
+    grid-area: itm9;
+ }
+
+ /*
+.item-5 {
+/*     
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3; */
+    
+    /* grid-row: 2/4;
+    grid-column: 2/4;  */
+
+    /* doing this css behind items starts to take auto width and height  */
+
+
+/* } */ 
+.circle{
+    background-color: brown;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    margin: 2rem auto;
+   }
