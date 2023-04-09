@@ -1,0 +1,153 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper{
+display: grid;
+grid-template-areas: 
+
+"img1    flimg img3 img4"
+"sideimg flimg img7 img7"
+"sideimg img8 img8 img9"
+"sideimg img10 img11 img11";
+/* grid-template-columns: repeat(4, 1fr); */
+height: 100dvh;
+width: 97%;
+margin: 5px auto;
+gap: 5px;
+}
+
+
+.images-1{
+grid-area: img1;
+background-color: antiquewhite;
+}
+.images-2{
+    grid-area: flimg;
+    
+    display: grid;
+    grid-template-areas: 
+    "inimg1"
+    "inimg2"
+    "inimg2"
+    "inimg2"
+    ;
+    gap: 5px;    
+}
+
+
+
+
+/* inside images style  */
+
+.img__style{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+.images-2_1{
+grid-area: inimg1;
+background-color: rebeccapurple;
+
+}
+.images-2_1 >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+
+}
+.images-2_2{
+grid-area: inimg2;
+background-color: navy;
+}
+.images-3{
+    grid-area: img3;
+    background-color: beige;
+}
+.images-4{
+    grid-area: img4;
+    background-color: blue;
+    
+}.images-5{
+    grid-area: sideimg;
+    background-color: blueviolet;
+    
+}
+/* .images-6{
+    grid-area: img6;
+
+    background-color: aquamarine;
+    
+} */
+.images-7{
+    grid-area: img7;
+    background-color: magenta;
+    
+}.images-8{
+    grid-area: img8;
+    background-color: yellowgreen;
+}.images-9{
+    grid-area: img9;
+    background-color: tomato;
+    
+}.images-10{
+    grid-area: img10;
+    background-color: thistle;
+    
+}.images-11{
+    grid-area: img11;
+    background-color: chocolate;
+    
+}
+
+
+/* media query  */
+
+@media  screen and (max-width:1099px) {
+
+
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    
+    "img1  img3 img3" 
+    "img4 img3 img3"
+    "sideimg flimg img7"
+    "sideimg flimg img8"
+    "img9 img10 img10"
+    "img11 img10 img10";
+    /* grid-template-columns: repeat(4, 1fr); */
+    height: 100dvh;
+    width: 97%;
+    margin: 5px auto;
+    gap: 5px;
+    }
+    
+    
+}
+
+
+/* phone and small size  */
+@media  screen and (max-width:550px) {
+    .wrapper{
+        display: grid;
+        grid-template-areas: 
+        
+        "img1 img1 "
+        "flimg flimg"
+        "img3 img3"
+        "img4 img4"
+        "sideimg img7"
+        "sideimg img8"
+        "img9 img9"
+        "img10  img11";
+        /* grid-template-columns: repeat(4, 1fr); */
+        height: 100dvh;
+        width: 97%;
+        margin: 5px auto;
+        gap: 5px;
+        }
+}
