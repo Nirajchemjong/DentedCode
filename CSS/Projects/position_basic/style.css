@@ -1,0 +1,34 @@
+body{
+    background: peachpuff;
+   
+}
+
+
+/* positions: static->means by default position
+, initial-> starting phase or initial phase to override static postion, inherit-> inherits from parents 
+, relative->, absolute, fixed, sticky  */
+
+.parent{
+background-color: paleturquoise;
+min-height: 90dvh;
+padding: 1rem; 
+font-size: 2rem;
+
+}
+.parent div{
+    padding: 1rem;
+    min-height: 150px;
+}
+
+.c1{
+    background: palegreen;
+
+}
+.c2{
+    background: palevioletred;
+    position: sticky;
+    top: 20px;
+}
+.c3{
+background: goldenrod;
+}
