@@ -1,0 +1,146 @@
+/* h2{
+    transition: all .3s;
+}
+
+h2:hover{
+    transform: rotateX(360deg)
+} */
+
+
+
+.container {
+    background-color: palevioletred;
+    width: 80%;
+    margin: auto;
+    height: 80dvh;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.parent{
+    background-color: yellowgreen;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: rotate 7s infinite;
+}
+
+    .ball{
+        width: 60px;
+        height: 60px;
+
+        background:radial-gradient(white, red 70%);
+        border-radius: 50%;
+
+        position: absolute;
+        top: 10rem;
+        left: 23rem;
+        animation: circle 10s infinite;
+
+    }
+h2{
+    /* position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-2px);
+    transform-origin: top; */
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform-origin: top;
+    /* transform: translate(-100%, -50%); */
+    animation: swing 1s ease-in-out infinite;
+}
+    @keyframes circle {
+
+        0%{
+            top:6rem;
+            left: 23rem;
+        }
+
+        25%{
+            top: 6rem;
+            left: 48rem;
+        }
+        50%{
+            top:33rem;
+            left: 48rem;
+
+        }
+        75%{
+            top: 33rem;
+            left: 23rem;
+
+        }
+        100%{
+            top: 6rem;
+            left: 23rem;     }
+
+
+        
+    }
+
+    @keyframes rotate {
+
+        0%{
+           transform: rotate(0);
+        }
+       
+        100%{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+
+    .pendulum {
+        width: 100px;
+        height: 200px;
+        position: relative;
+      }
+      
+      .rod {
+        width: 4px;
+        height: 150px;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-2px);
+        transform-origin: top;
+      }
+      
+      .bob {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: black;
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: swing 2s ease-in-out infinite;
+      }
+      
+      @keyframes swing {
+        0% {
+          transform:  rotate(0deg);
+        }
+        50% {
+          transform:  rotate(55deg);
+        }
+        100% {
+          transform:  rotate(-55deg);
+        }
+      }
+      
+    
