@@ -1,0 +1,163 @@
+
+body{
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+*,*::after, *::before {
+    box-sizing: border-box;
+}
+.hero{
+    height: 50vh;
+    position: relative;
+    
+    /* margin-bottom: 0; */
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+.hero > div {
+    background-color: rgba(7, 7, 7, 0.767);
+    width: 35%;
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    
+    padding: 20px;
+    color:white;
+    
+    border-radius: 20px;
+    box-shadow: -5px 15px 12px  black;
+
+    /* making blur effects  */
+     /* Add the blur effect */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    text-decoration: none;
+    /*     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }
+
+
+/* navbar starts  */
+.top-menu{
+    margin-top: -6px;
+    background-color: black;
+    position: sticky;
+    top:0;
+    z-index: 4;
+}
+.top-menu > div{
+
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 98%; */
+}
+.top-menu > .container > ul{
+    color: white;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+
+}
+ul > li {
+    transition: transform .6s ;
+}
+
+ul > li:hover {
+    cursor: pointer;
+    transform: scale(1.8);
+}
+
+
+
+/* div:has( > h1 + p ){
+    color: white;
+    z-index: 2;
+    background-color: rgb(0,0,0);  Fallback color 
+    background-color: rgb(0, 0, 0);  Black w/opacity/see-through 
+    color: white;
+    font-weight: bold;
+   
+} */
+
+
+/* paragraph section starts  */
+
+
+
+/* parallex starts  */
+
+[class^="img"]{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.img1{
+    background: url(./img/a.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+.img2{
+
+    background: url(./img/b.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.img3{
+    background: url(./img/c.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.img4{
+    background: url(./img/d.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title{
+    background: rgba(0, 0, 0, 0.596);
+    color:white;
+    font-size: 3rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    
+    /* width: 30%;
+    margin: auto;
+    text-align: center; */
+}
+
+footer{
+    height: 8dvh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
