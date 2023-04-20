@@ -1,0 +1,203 @@
+@import "./mixins";
+
+
+:root {
+    --color-dark: #2a2a2a;
+    --color-yellow: #ffca2f;
+    --body-bg: #fff;
+    --text-color: #000;
+    --link-color: #0e76a8;
+    --border-color: #2a2a2a;
+
+    //Dark Mode
+
+    --dark-bg: #2a2a2a;
+    --dark-text-color: #fff;
+    --dark-link-color: #ffca2f;
+    --dark-border-color: #fff;
+}
+
+
+// DEFAULT GLOBAL STYLE 
+
+$font-stack: 'Montserrat', sans-serif;
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-stack;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.wrapper {
+    background: var(--body-bg);
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+// Dark mode
+
+.dark-mode-checkbox:checked+.wrapper {
+
+    --body-bg: var(--dark-bg);
+    --text-color: var(--dark-text-color);
+    --link-color: var(--dark-link-color);
+    --border-color: var(--dark-border-color);
+
+}
+
+#darkMode {
+    display: none;
+    position: fixed;
+    top: 6rem;
+    left: 1rem;
+
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 6rem;
+    left: 2rem;
+    cursor: pointer;
+
+
+    &:hover {
+        transform: scale(1.5);
+        transition: all .5s;
+    }
+}
+
+
+// header 
+.primary-header {
+
+    background-color: var(--body-bg);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.282);
+    position: sticky;
+    top: 0;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: var(--text-color);
+    z-index: 99;
+
+    .logo {
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        position: relative;
+
+        div {
+            &:nth-child(1) {
+                h1 {
+
+                    font-size: 1.8rem;
+                    padding-right: 1rem;
+                    margin-left: 0;
+                }
+            }
+
+            &:nth-child(2) {
+                h1 {
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .line {
+            &::before {
+
+                content: "";
+                background-color: var(--color-yellow);
+                height: 70%;
+                width: 4px;
+                position: absolute;
+                left: 63%;
+            }
+        }
+
+
+    }
+
+    .right {
+
+        #check,
+        .menu-icon {
+            display: none;
+        }
+    }
+}
+
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2.5rem;
+
+    & li {
+        a {
+            &:hover {
+                color: var(--color-yellow);
+                transition: all .5s;
+            }
+        }
+    }
+}
+
+
+
+// media query for tablet design for header 
+@include tablet() {
+    .primary-header .right {
+
+
+        .menu-icon {
+            display: block;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .navigation {
+            flex-direction: column;
+            width: 15rem;
+            height: 100vh;
+            background: var(--body-bg);
+            color: var(--text-color);
+
+            position: fixed;
+            left: 100%;
+            top: 4.7rem;
+
+            transition: 0.5s ease-in;
+
+            li {
+                padding-left: 1rem;
+            }
+
+
+        }
+
+        #check:checked~ul {
+            left: calc(100% - 15rem);
+
+        }
+    }
+}
