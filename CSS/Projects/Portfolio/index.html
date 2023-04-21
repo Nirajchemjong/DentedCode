@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- GOogle FOnts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- stylesheet  -->
     <link rel="stylesheet" href="./style.css">
     <title>Niraj Chemjong | Protfolio</title>
 </head>
@@ -37,11 +41,11 @@
                 <label for="check" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
 
                 <ul class="navigation flex">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Skilss</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skils</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
 
 
@@ -49,28 +53,213 @@
 
         </header>
 
-
-
         <!-- Hero  -->
-
+        <section class="section1 grid" id="home">
+            <div class="left">
+                <img src="./assets/Subject.png" alt="profile pic" srcset="">
+            </div>
+            <div class="right flex">
+                <div class="flex">
+                    <div class="name">Niraj Chemjong</div>
+                    <div class="tag">Soft. Engineer</div>
+                </div>
+                <button>
+                    <a href="./assets/Pariwesh.Resume.pdf" download> Download CV <i
+                            class="fa-solid fa-download"></i></a>
+                </button>
+            </div>
+        </section>
 
         <!-- banner  -->
 
+        <section class="section2">
+            <div class="info-container flex">
+                <div class="info-lists flex">
+                    <div class="info-content flex">
+
+                        <div class="icon-container flex">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <span>
+                            <h5>IT</h5>
+                            <p>Graduate</p>
+                        </span>
+                    </div>
+
+                    <div class="info-divider"></div>
+
+                    <!-- //projects Complete  -->
+
+                    <div class="info-content flex">
+
+                        <div class="icon-container flex">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <span>
+                            <h5>5 + Projects</h5>
+                            <p>Completed</p>
+                        </span>
+                    </div>
+                    <div class="info-divider"></div>
+
+
+                    <!-- Year Experiences -->
+
+                    <div class="info-content flex">
+
+                        <div class="icon-container flex">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <span>
+                            <h5>1 + Year</h5>
+                            <p>Experiences</p>
+                        </span>
+                    </div>
+                    <div class="info-divider"></div>
+                </div>
+            </div>
+        </section>
+
         <!-- Skills section  -->
-
-
+        <section class="section3" id="skills">
+            <div class="skills-container flex">
+                <div class="flex"><i class="fa-brands fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="flex"><i class="fa-brands fa-css3"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="flex"><i class="fa-brands fa-square-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="flex"><i class="fa-brands fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="flex"><i class="fa-regular fa-folder-open"></i>
+                    <span>Firebase</span>
+                </div>
+            </div>
+        </section>
 
         <!-- Projects  -->
-
+        <section class="section4 flex" id="projects">
+            <h2 class="title">My Recent Projects</h2>
+            <div class="projects-container grid">
+                <div class="project-card flex">
+                    <div class="top">
+                        <img src="./assets/imgs/ec.png" alt="ecommerce" srcset="">
+                    </div>
+                    <div class="bottom">
+                        <p>Full-stack Web App built with React & Firebase</p>
+                        <p>Dec 15 2022</p>
+                    </div>
+                </div>
+                <div class="project-card flex">
+                    <div class="top">
+                        <img src="./assets/imgs/ec.png" alt="ecommerce" srcset="">
+                    </div>
+                    <div class="bottom">
+                        <p>Full-stack Web App built with React & Firebase</p>
+                        <p>Dec 15 2022</p>
+                    </div>
+                </div>
+                <div class="project-card flex">
+                    <div class="top">
+                        <img src="./assets/imgs/ec.png" alt="ecommerce" srcset="">
+                    </div>
+                    <div class="bottom">
+                        <p>Full-stack Web App built with React & Firebase</p>
+                        <p>Dec 15 2022</p>
+                    </div>
+                </div>
+                <div class="project-card flex">
+                    <div class="top">
+                        <img src="./assets/imgs/ec.png" alt="ecommerce" srcset="">
+                    </div>
+                    <div class="bottom">
+                        <p>Full-stack Web App built with React & Firebase</p>
+                        <p>Dec 15 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- about  -->
+        <section class="section5 flex" id="about">
+            <h1 class="title">About me</h1>
+            <div class="about-container flex">
+                <div class="left">
+                    <img src="./assets/Subject copy.png" alt="" srcset="">
+                </div>
+                <div class="right flex">
+                    <h2>Niraj Chemjong</h2>
+                    <p>Recently Graduated from Victorian Institute Of Techonology And Systems.</p>
+                    <p>Canberra, Australia</p>
+                    <!-- <a href="#">Connect With me</a> -->
+                    <div class="flex">
+                        <div class="tag">Interests
 
+                        </div>
+                        <div>
+                            <span>coding</span>
+                            <span>Football</span>
+                            <span>Movies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- //Get In Touch  -->
+
+        <section class="section6 flex" id="contact">
+            <h2 class="title">Get In Touch</h2>
+            <div class="socials flex">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-github"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <h3 class="title">OR</h3>
+            <div class="email-section flex">
+                <div class="email flex">
+                    <a href="mailto:nirajlimbu7@gmail.com">
+                        example@gmail.com
+                    </a>
+                    <div class="send">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- footer  -->
 
-
-
-
+        <footer>
+            <div class="footer-container flex">
+                <div class="links flex">
+                    <h3>Links</h3>
+                    <ul class="flex">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="socials flex">
+                    <h3>Socials</h3>
+                    <ul class="flex">
+                        <li><a href="#">LinkedIN</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; All right reserved.
+            </div>
+        </footer>
     </div>
 
 </body>
