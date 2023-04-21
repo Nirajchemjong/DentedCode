@@ -1,0 +1,13 @@
+@mixin flex($bv) {
+    display: flex;
+    justify-content: $bv;
+    align-items: $bv;
+}
+
+
+.try {
+
+    width: 100%;
+    @include flex(center);
+    gap: 3rem;
+}
