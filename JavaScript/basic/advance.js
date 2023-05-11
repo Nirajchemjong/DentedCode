@@ -154,16 +154,8 @@ const add = (a, b) => {
 };
 // PUre function
 
+// High Order Function, a function that takes function as an argument or returns a function.
 
-// High Order Function, a function that takes function as an argument or returns a function. 
+// Recursion calls itself in infinite loop
 
- 
-// Recursion calls itself in infinite loop 
-
-
-let i = 0 ; 
-Function increase()={
-    i ++
-}
-
-
+let i = 0;
