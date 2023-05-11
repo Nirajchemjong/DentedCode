@@ -92,3 +92,5 @@ const randomNumber = () => {
   const num = Math.round(Math.random() * 10);
   return num <= 3 ? num : 0;
 };
+
+const audio = new audio("audio path");
