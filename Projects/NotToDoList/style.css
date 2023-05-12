@@ -1,0 +1,9 @@
+body {}
+
+.wrapper {
+
+    min-height: 100vh;
+
+    background: linear-gradient(rgba(255, 255, 0, 0.44) 40%, rgba(10, 45, 218, 0.796));
+
+}
