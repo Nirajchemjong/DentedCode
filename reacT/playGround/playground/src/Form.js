@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import RealData from "./RealData";
-import UpdateRealData from "./UpdateRealData";
+// import UpdateRealData from "./UpdateRealData";
 export const Form = ({ setDisplay }) => {
   const [userValue, setValue] = useState("hello world"); // to display on live
 
