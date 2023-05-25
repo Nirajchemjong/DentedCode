@@ -4,6 +4,7 @@ import Display from "./Display";
 const App = () => {
   const [resultFname, setDisplayFname] = useState("First name");
   const [resultLname, setDisplayLname] = useState("Last name");
+
   return (
     <div>
       <center>

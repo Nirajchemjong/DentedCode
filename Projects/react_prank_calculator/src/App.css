@@ -1,0 +1,317 @@
+/* :root {
+  --primaryColor: #617a55;
+  --secondaryColor: #a4d0a4;
+  --trColor: #fff8d6;
+
+}
+
+body {
+  margin: 0;
+  /* padding: 0; */
+/* font-size: 1.1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background: linear-gradient(var(--secondaryColor) 40%, var(--primaryColor));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: gray;
+  width: 400px;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "display display display display"
+    "btn-ac btn-c btn-perc btn-divide"
+    "btn-7 btn-b8 btn-9 btn-x"
+    "btn-4 btn-5 btn-6 btn-minus"
+    "btn-1 btn-2 btn-3 btn-plus"
+    "btn-0 btn-0 btn-dot btn-equals";
+
+}
+
+.calculator div {
+  height: 50px;
+  background: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  grid-area: display;
+}
+
+.btn-ac {
+  grid-area: btn-ac;
+}
+
+.btn-c {
+  grid-area: btn-c;
+}
+
+.btn-perc {
+  grid-area: btn-perc;
+}
+
+.btn-divide {
+  grid-area: btn-divide;
+}
+
+.btn-7 {
+  grid-area: btn-7;
+}
+
+.btn-8 {
+  grid-area: btn-8;
+}
+
+.btn-9 {
+  grid-area: btn-9;
+}
+
+.btn-x {
+  grid-area: btn-x;
+}
+
+.btn-4 {
+  grid-area: btn-4;
+}
+
+.btn-5 {
+  grid-area: btn-5;
+}
+
+.btn-6 {
+  grid-area: btn-6;
+}
+
+.btn-minus {
+  grid-area: btn-minus;
+}
+
+.btn-1 {
+  grid-area: btn-1;
+}
+
+.btn-2 {
+  grid-area: btn-2;
+}
+
+.btn-3 {
+  grid-area: btn-3;
+}
+
+.btn-plus {
+  grid-area: btn-plus;
+}
+
+.btn-0 {
+  grid-area: btn-0;
+}
+
+.btn-dot {
+  grid-area: btn-dot;
+}
+
+.btn-equals {
+  grid-area: btn-equals;
+}
+
+.prank {
+  animation: shake 0.5s ease-in;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+
+    transform: translateX(-10px);
+
+  }
+}
+
+*/
+
+:root {
+  --primaryClr: #617a55;
+  --secondaryClr: #a4d0a4;
+  --trClr: #fff8d6;
+}
+
+body {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background: linear-gradient(var(--trClr), var(--primaryClr));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: grey;
+
+  width: 400px;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+
+  display: grid;
+  gap: 1rem;
+
+  grid-template-areas:
+    "display display display display"
+    "ac c perc divide"
+    "b7 b8 b9 x"
+    "b4 b5 b6 minus"
+    "b1 b2 b3 plus"
+    "b0 dot equals equals";
+}
+
+.calculator div {
+  height: 50px;
+  background: var(--primaryClr);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator div:hover {
+  cursor: pointer;
+  background: var(--secondaryClr);
+  transition: all 0.5s;
+}
+
+.display {
+  grid-area: display;
+}
+
+.btn-ac {
+  grid-area: ac;
+}
+
+.btn-c {
+  grid-area: c;
+}
+
+.btn-perc {
+  grid-area: perc;
+}
+
+.btn-divide {
+  grid-area: divide;
+}
+
+.btn-7 {
+  grid-area: b7;
+}
+
+.btn-8 {
+  grid-area: b8;
+}
+
+.btn-9 {
+  grid-area: b9;
+}
+
+.btn-x {
+  grid-area: x;
+}
+
+.btn-4 {
+  grid-area: b4;
+}
+
+.btn-5 {
+  grid-area: b5;
+}
+
+.btn-6 {
+  grid-area: b6;
+}
+
+.btn-minus {
+  grid-area: minus;
+}
+
+.btn-1 {
+  grid-area: b1;
+}
+
+.btn-2 {
+  grid-area: b2;
+}
+
+.btn-3 {
+  grid-area: b3;
+}
+
+.btn-plus {
+  grid-area: plus;
+}
+
+.btn-0 {
+  grid-area: b0;
+}
+
+.btn-dot {
+  grid-area: dot;
+}
+
+.btn-equals {
+  grid-area: equals;
+}
+
+.calculator .prank {
+  animation: shake 0.5s ease-in;
+  background-color: red;
+
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  0% {
+    transform: translateX(10px);
+  }
+}

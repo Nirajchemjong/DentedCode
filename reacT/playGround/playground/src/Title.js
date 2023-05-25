@@ -13,3 +13,6 @@ const SubTitle1 = () => {
 export default SubTitle1;
 
 // you can export as much as you want by using inline export but you can only export one default export from file
+
+
+//export default can be any name while import and doesn't required to be on curley bases {} 
