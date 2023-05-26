@@ -52,7 +52,7 @@ export const ListContainer = ({ movieList, handleOnDelete }) => {
           Boring
         </button>
       </div>
-      <div className='mt-3'>{movieList.length} movies found</div>
+      <div className='mt-3'>{display.length} movies found</div>
       <div className='d-flex flex-wrap justify-content-center py-3 gap-3'>
         {/* <img
           src='...'
