@@ -21,9 +21,19 @@ export const Form = ({ setDisplay }) => {
   };
   return (
     <div>
-      <RealData name="niraj" lname="chemjong" data={userValue} />
-      <form action="" onSubmit={handleOnSubmit}>
-        <input type="text" onChange={handleOnChange} />
+      <RealData
+        name='niraj'
+        lname='chemjong'
+        data={userValue}
+      />
+      <form
+        action=''
+        onSubmit={handleOnSubmit}
+      >
+        <input
+          type='text'
+          onChange={handleOnChange}
+        />
         <button>Submit</button>
       </form>
       {/* <UpdateRealData UpdatedData={display} /> */}
