@@ -614,8 +614,14 @@ footer {
 
         .right {
             position: absolute;
-            top: 4rem;
+            top: 6rem;
             left: -17rem;
+
+            div {
+                & .name {
+                    font-size: 2.9rem;
+                }
+            }
 
         }
     }
@@ -646,13 +652,8 @@ footer {
 
 
     .section5 {
-        margin: 4rem;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 7rem;
-
-        width: 80%;
+        margin: 2rem;
+        width: 90%;
 
         .about-container {
             width: 100%;
@@ -667,18 +668,20 @@ footer {
                 height: 20rem;
                 // padding: 0 2rem;
                 background-image: url('./assets/Subject.png');
-                background-position: center;
+                background-position: top;
                 background-size: cover;
                 background-repeat: no-repeat;
-                object-fit: cover;
+                // object-fit: cover;
 
 
             }
 
             .right {
-                width: 100%;
+                width: 50rem;
                 flex-direction: column;
                 // gap: 2rem;
+                justify-content: center;
+                align-items: center;
                 padding: 0 2rem;
 
                 h2 {
@@ -688,6 +691,7 @@ footer {
                 p {
                     &:nth-child(3) {
                         font-weight: 600;
+                        align-self: flex-start;
                     }
                 }
 
@@ -716,66 +720,21 @@ footer {
 
 
     .section6 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 3rem;
-        padding-top: 7rem;
+
+        margin: 1rem;
+        padding-top: 3rem;
+        gap: 3rem;
 
         .socials {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 6rem;
+
+            padding: 0;
+            // gap: 3rem;
             width: 80%;
             justify-content: space-between;
 
-            i {
-                font-size: 3rem;
 
-                &:nth-child(1) {
-                    color: blue;
-                }
-
-                &:nth-child(2) {
-                    color: #6e5494;
-                }
-
-                &:nth-child(3) {
-                    color: rgba(64, 188, 255, 0.78);
-                }
-
-                &:nth-child(4) {
-                    color: red;
-                }
-            }
         }
 
-        .email-section {
-            // width: 60%; 
-            background: var(--border-color);
-            padding: 1rem 2rem;
-            border-radius: 100px;
-            color: var(--body-bg);
 
-            .email {
-
-                justify-content: center;
-                align-items: center;
-
-                .send {
-                    width: 3rem;
-                    height: 3rem;
-                    border-radius: 50%;
-                    background: var(--color-yellow);
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-        }
     }
-
-
 }

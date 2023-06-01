@@ -437,8 +437,11 @@ footer .footer-container .socials ul li a:hover {
   }
   .section1 .right {
     position: absolute;
-    top: 4rem;
+    top: 6rem;
     left: -17rem;
+  }
+  .section1 .right div .name {
+    font-size: 2.9rem;
   }
   .section2 .info-container .info-lists {
     display: flex;
@@ -452,12 +455,8 @@ footer .footer-container .socials ul li a:hover {
     background: grey;
   }
   .section5 {
-    margin: 4rem;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 7rem;
-    width: 80%;
+    margin: 2rem;
+    width: 90%;
   }
   .section5 .about-container {
     width: 100%;
@@ -471,15 +470,15 @@ footer .footer-container .socials ul li a:hover {
     width: 40rem;
     height: 20rem;
     background-image: url("./assets/Subject.png");
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .section5 .about-container .right {
-    width: 100%;
+    width: 50rem;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0 2rem;
   }
   .section5 .about-container .right h2 {
@@ -487,6 +486,7 @@ footer .footer-container .socials ul li a:hover {
   }
   .section5 .about-container .right p:nth-child(3) {
     font-weight: 600;
+    align-self: flex-start;
   }
   .section5 .about-container .right div {
     flex-direction: column;
@@ -501,52 +501,13 @@ footer .footer-container .socials ul li a:hover {
     font-size: 0.8rem;
   }
   .section6 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem;
-    padding-top: 7rem;
+    margin: 1rem;
+    padding-top: 3rem;
+    gap: 3rem;
   }
   .section6 .socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 6rem;
+    padding: 0;
     width: 80%;
     justify-content: space-between;
-  }
-  .section6 .socials i {
-    font-size: 3rem;
-  }
-  .section6 .socials i:nth-child(1) {
-    color: blue;
-  }
-  .section6 .socials i:nth-child(2) {
-    color: #6e5494;
-  }
-  .section6 .socials i:nth-child(3) {
-    color: rgba(64, 188, 255, 0.78);
-  }
-  .section6 .socials i:nth-child(4) {
-    color: red;
-  }
-  .section6 .email-section {
-    background: var(--border-color);
-    padding: 1rem 2rem;
-    border-radius: 100px;
-    color: var(--body-bg);
-  }
-  .section6 .email-section .email {
-    justify-content: center;
-    align-items: center;
-  }
-  .section6 .email-section .email .send {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: var(--color-yellow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }/*# sourceMappingURL=App.css.map */
