@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 // import "./style.css";
 
@@ -24,18 +25,45 @@ function App() {
       <div className='wrapper'>
         {/* header section  */}
         <Header />
+        <Routes>
+          <Route
+            path='/'
+            element={<Hero />}
+          />
+          <Route
+            path='skills'
+            element={<Skills />}
+          />
+          <Route
+            path='projects'
+            element={<ProjectsInfo />}
+          />
+          <Route
+            path='about'
+            element={<About />}
+          />
+          <Route
+            path='banner'
+            element={<Banner />}
+          />
+          <Route
+            path='contact'
+            element={<Contact />}
+          />
+        </Routes>
+
         {/* <!-- Hero  --> */}
-        <Hero />
+        {/* <Hero /> */}
         {/* <!-- banner  --> */}
-        <Banner />
+        {/* <Banner /> */}
         {/* <!-- Skills section  --> */}
-        <Skills />
+        {/* <Skills /> */}
         {/* <!-- Projects  --> */}
-        <ProjectsInfo />
+        {/* <ProjectsInfo /> */}
         {/* <!-- about  --> */}
-        <About />
+        {/* <About /> */}
         {/* <!-- //Get In Touch  --> */}
-        <Contact />
+        {/* <Contact /> */}
         {/* <!-- footer  --> */}
         <Footer />
       </div>
@@ -44,3 +72,10 @@ function App() {
 }
 
 export default App;
+
+// working with react route dom
+
+// 1. npm i react-router-dom
+// 2. wrap entire components with BrowserRouter in indexedDB.js or App.js
+// 3. use Routes components to wrap all the pagess.
+// 4. difine individual page by using Route component

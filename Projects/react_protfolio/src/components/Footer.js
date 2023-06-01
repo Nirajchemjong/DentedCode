@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -10,19 +11,19 @@ export const Footer = () => {
             <h3>Links</h3>
             <ul className='flex'>
               <li>
-                <a href='#home'>Home</a>
+                <Link to='/home'>Home</Link>
               </li>
               <li>
-                <a href='#projects'>Projects</a>
+                <Link to='/projects'>Projects</Link>
               </li>
               <li>
-                <a href='#about'>About</a>
+                <Link to='/about'>About</Link>
               </li>
               <li>
-                <a href='#skills'>Skills</a>
+                <Link to='/skills'>Skills</Link>
               </li>
               <li>
-                <a href='#contact'>Contact</a>
+                <Link to='/contact'>Contact</Link>
               </li>
             </ul>
           </div>
@@ -30,13 +31,13 @@ export const Footer = () => {
             <h3>Socials</h3>
             <ul className='flex'>
               <li>
-                <a href='#!'>LinkedIN</a>
+                <a to='/!'>LinkedIN</a>
               </li>
               <li>
-                <a href='#!'>GitHub</a>
+                <a to='/!'>GitHub</a>
               </li>
               <li>
-                <a href='#!'>YouTube</a>
+                <a to='/!'>YouTube</a>
               </li>
             </ul>
           </div>
