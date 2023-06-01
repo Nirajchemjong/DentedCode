@@ -1,8 +1,9 @@
 import React from "react";
+import { Layout } from "./Layout";
 
 export const Skills = () => {
   return (
-    <div>
+    <Layout>
       <section
         className='section3'
         id='skills'
@@ -30,6 +31,6 @@ export const Skills = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };

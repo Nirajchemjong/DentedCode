@@ -24,7 +24,7 @@ function App() {
       />
       <div className='wrapper'>
         {/* header section  */}
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route
             path='/'
@@ -65,7 +65,7 @@ function App() {
         {/* <!-- //Get In Touch  --> */}
         {/* <Contact /> */}
         {/* <!-- footer  --> */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

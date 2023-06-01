@@ -1,11 +1,10 @@
 import React from "react";
 
 import subject from "../assets/Subject.png";
-
+import { Layout } from "./Layout";
 export const About = () => {
   return (
-    <div>
-      {" "}
+    <Layout>
       <section
         className='section5 flex'
         id='about'
@@ -32,6 +31,6 @@ export const About = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };

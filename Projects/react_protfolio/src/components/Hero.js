@@ -1,11 +1,11 @@
 import React from "react";
 import subject from "../assets/Subject.png";
 import Resume from "../assets/Pariwesh.Resume.pdf";
+import { Layout } from "./Layout";
 
 export const Hero = () => {
   return (
-    <div>
-      {" "}
+    <Layout>
       <section
         className='section1 grid'
         id='home'
@@ -32,6 +32,6 @@ export const Hero = () => {
           </button>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };

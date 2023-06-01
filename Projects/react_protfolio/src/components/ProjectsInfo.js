@@ -1,9 +1,10 @@
 import React from "react";
 import ec from "../assets/imgs/ec.png";
+import { Layout } from "./Layout";
 
 export const ProjectsInfo = () => {
   return (
-    <div>
+    <Layout>
       <section
         className='section4 flex'
         id='projects'
@@ -64,6 +65,6 @@ export const ProjectsInfo = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };
