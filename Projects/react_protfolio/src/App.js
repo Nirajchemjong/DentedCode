@@ -23,7 +23,7 @@ function App() {
       />
       <div className='wrapper'>
         {/* header section  */}
-        <Header />
+        {/* <Header /> */}
         {/* <!-- Hero  --> */}
         <Hero />
         {/* <!-- banner  --> */}
@@ -37,7 +37,7 @@ function App() {
         {/* <!-- //Get In Touch  --> */}
         <Contact />
         {/* <!-- footer  --> */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
