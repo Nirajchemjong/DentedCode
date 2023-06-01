@@ -31,13 +31,13 @@ export const Footer = () => {
             <h3>Socials</h3>
             <ul className='flex'>
               <li>
-                <a to='/!'>LinkedIN</a>
+                <a href='/!'>LinkedIN</a>
               </li>
               <li>
-                <a to='/!'>GitHub</a>
+                <a href='/!'>GitHub</a>
               </li>
               <li>
-                <a to='/!'>YouTube</a>
+                <a href='/!'>YouTube</a>
               </li>
             </ul>
           </div>
