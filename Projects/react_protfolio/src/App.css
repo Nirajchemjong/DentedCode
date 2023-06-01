@@ -500,4 +500,53 @@ footer .footer-container .socials ul li a:hover {
   .section5 .about-container .right div div span {
     font-size: 0.8rem;
   }
+  .section6 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    padding-top: 7rem;
+  }
+  .section6 .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .section6 .socials i {
+    font-size: 3rem;
+  }
+  .section6 .socials i:nth-child(1) {
+    color: blue;
+  }
+  .section6 .socials i:nth-child(2) {
+    color: #6e5494;
+  }
+  .section6 .socials i:nth-child(3) {
+    color: rgba(64, 188, 255, 0.78);
+  }
+  .section6 .socials i:nth-child(4) {
+    color: red;
+  }
+  .section6 .email-section {
+    background: var(--border-color);
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    color: var(--body-bg);
+  }
+  .section6 .email-section .email {
+    justify-content: center;
+    align-items: center;
+  }
+  .section6 .email-section .email .send {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--color-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=App.css.map */
