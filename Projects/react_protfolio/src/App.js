@@ -8,8 +8,8 @@ import { About } from "./components/About";
 
 import { Banner } from "./components/Banner";
 import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
+// import { Footer } from "./components/Footer";
+// import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { ProjectsInfo } from "./components/ProjectsInfo";
 import { Skills } from "./components/Skills";
