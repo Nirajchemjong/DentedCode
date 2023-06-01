@@ -12,13 +12,7 @@ export const About = () => {
       >
         <h1 className='title'>About me</h1>
         <div className='about-container flex'>
-          <div className='left'>
-            {/* <img
-              src={subject}
-              alt=''
-              srcset=''
-            /> */}
-          </div>
+          <div className='left'></div>
           <div className='right flex'>
             <h2>Niraj Chemjong</h2>
             <p>

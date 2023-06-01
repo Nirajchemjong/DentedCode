@@ -442,6 +442,8 @@ footer .footer-container .socials ul li a:hover {
   }
   .section2 .info-container .info-lists {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
   .section2 .info-container .info-lists .info-divider {
@@ -462,14 +464,18 @@ footer .footer-container .socials ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     padding: 3rem;
+    justify-content: center;
+    align-items: center;
   }
   .section5 .about-container .left {
-    width: 50%;
-    padding: 0 2rem;
+    width: 40rem;
+    height: 20rem;
     background-image: url("./assets/Subject.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .section5 .about-container .right {
     width: 100%;

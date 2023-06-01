@@ -629,6 +629,8 @@ footer {
 
             .info-lists {
                 display: flex;
+                justify-content: center;
+                align-items: flex-start;
                 flex-wrap: wrap;
 
                 .info-divider {
@@ -657,14 +659,19 @@ footer {
             display: flex;
             flex-wrap: wrap;
             padding: 3rem;
+            justify-content: center;
+            align-items: center;
 
             .left {
-                width: 50%;
-                padding: 0 2rem;
+                width: 40rem;
+                height: 20rem;
+                // padding: 0 2rem;
                 background-image: url('./assets/Subject.png');
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
+                object-fit: cover;
+
 
             }
 
