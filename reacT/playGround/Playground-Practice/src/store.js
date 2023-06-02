@@ -3,6 +3,7 @@ import dataReducer from "./DisplaySlice";
 const store = configureStore({
   reducer: {
     data: dataReducer,
+    
   },
 });
 

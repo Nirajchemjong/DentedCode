@@ -1,4 +1,4 @@
-// In this file we will be using dispatch to carry data to the slice files
+// In this file we will be using dispatch to carry data to the slice files and dispatch calls function of actions.
 
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
