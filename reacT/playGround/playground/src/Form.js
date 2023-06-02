@@ -7,7 +7,7 @@ export const Form = ({ setDisplay }) => {
   //   const [display, setDisplay] = useState("Hello Display ");
 
   const handleOnChange = (e) => {
-    const { name, value } = e.target;
+    const { value } = e.target;
 
     setValue(value);
   };

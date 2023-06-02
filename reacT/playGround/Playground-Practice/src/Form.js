@@ -1,21 +1,38 @@
 import React, { useState } from "react";
 import { Names } from "./Names";
+import { useDispatch } from "react-redux";
+import { setDiplayFname } from "./DisplaySlice";
 // import Display from "./Display";
-export const Form = ({ setDisplayFname, setDisplayLname }) => {
-  const [FirstName, Fname] = useState("first Name");
-  const [LastName, Lname] = useState("Last Name");
+export const Form = ({ receiveData }) => {
+  const [FirstName, Fname] = useState({});
+  const [LastName, Lname] = useState({});
 
+  const dispatch = useDispatch();
   const showResults = (e) => {
     // const { value } = e.target;
     e.preventDefault();
-    setDisplayFname(FirstName); //upLifting data to parent
-    setDisplayLname(LastName); //UpLifting data to Parent
+
+    const DisplayObj = {
+      FirstName,
+      LastName,
+    };
+
+    dispatch(setDiplayFname(DisplayObj));
+    // dispatch(setDisplayLname(LastName));
+    //   setDisplayFname(FirstName); //upLifting data to parent
+    //   setDisplayLname(LastName); //UpLifting data to Parent
   };
   return (
     <div>
       <center>
-        <form action="" onSubmit={showResults}>
-          <Names Fname={Fname} Lname={Lname} />
+        <form
+          action=''
+          onSubmit={showResults}
+        >
+          <Names
+            Fname={Fname}
+            Lname={Lname}
+          />
           <button>Submit</button>
         </form>
 

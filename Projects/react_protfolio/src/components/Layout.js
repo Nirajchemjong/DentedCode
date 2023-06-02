@@ -7,10 +7,10 @@ export const Layout = ({ children }) => {
     <>
       {/* // header  */}
 
-      <Header />
+      {/* <Header />
       <main className='main'>{children}</main>
 
-      <Footer />
+      <Footer /> */}
 
       {/* // footer  */}
     </>
